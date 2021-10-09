@@ -29,4 +29,4 @@ If you find **ANY** security issues, please submit a pull request and/or email m
 
 # License
 
-This project is licensed under the [MIT license](LICENSE.md).
+This project is licensed under the [MIT license](LICENSE).
