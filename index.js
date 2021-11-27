@@ -56,7 +56,7 @@ app.get('/:file/delete', (req, res) => {
     const pass = req.query.pass;
     const reqFile = req.params.file;
 
-    if (pass !== password) {
+    if (!crypto.timingSafeEqual(pass, password)) {
         return res.status(403).send("Wrong password");
     }
 
