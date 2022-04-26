@@ -8,7 +8,7 @@ const app = express();
 const dir = path.join(__dirname, "/files");
 let dirContents = fs.readdirSync(dir);
 const htmlFile = fs.readFileSync(path.join(__dirname, "/index.html"), "utf8");
-const port = process.argv[2];
+const port = process.argv[2] || 3000;
 const password = "password";
 
 app.use(async (req, res, next) => {
