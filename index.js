@@ -1,5 +1,6 @@
 const express = require('express');
 const fs = require('fs');
+const crypto = require('crypto');
 const path = require('path');
 const formidable = require('formidable');
 const chalk = require('chalk');
@@ -56,7 +57,7 @@ app.get('/:file/delete', (req, res) => {
     const pass = req.query.pass;
     const reqFile = req.params.file;
 
-    if (pass !== password) {
+    if (!crypto.timingSafeEqual(pass, password)) {
         return res.status(403).send("Wrong password");
     }
 
