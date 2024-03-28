@@ -25,7 +25,7 @@ To contribute to this project, please fork it on GitHub and submit a pull reques
 
 # Security
 
-If you find **ANY** security issues, please submit a pull request and/or email me at [xcyth@xcyth.xyz](mailto://xcyth@xcyth.xyz).
+If you find **ANY** security issues, please submit a pull request and/or email me at [xcyth.dev@gmail.com](mailto://xcyth.dev@gmail.com).
 
 # License
 
